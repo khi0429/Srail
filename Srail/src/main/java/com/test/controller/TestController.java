@@ -17,9 +17,10 @@ public class TestController {
 
 	@RequestMapping("/test.do")
 	public void showTest() {
-
+		
 	}
 
+	//
 	public static void main(String[] args) { 
 		
 		try{
