@@ -17,7 +17,7 @@ public class TestController {
 
 	@RequestMapping("/test.do")
 	public void showTest(Model m) {
-		System.out.println("showTest()@@@");
+		System.out.println("showTest()@@");
 	}
 
 	public static void main(String[] args) { 
