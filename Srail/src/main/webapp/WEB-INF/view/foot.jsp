@@ -8,4 +8,4 @@
 			<small>Copyright &copy; 2017 SRail, All Rights Reserved.</small>
 		</div>
 	</div>
-</div>
+</div> 
