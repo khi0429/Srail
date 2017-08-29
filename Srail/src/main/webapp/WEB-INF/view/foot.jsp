@@ -6,6 +6,6 @@
 		<h2 id="fLeft" class="col-md-4 col-xs-4"><img src="images/SRailBLogo.png" width="160px"></h2>
 		<div id="fRight" class="col-md-8 col-xs-8">
 			<small>Copyright &copy; 2017 SRail, All Rights Reserved.</small>
-		</div>
+		</div> 
 	</div>
 </div> 

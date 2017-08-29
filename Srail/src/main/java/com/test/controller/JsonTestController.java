@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class JsonTestController {
 	
-	@RequestMapping("/jsonTest.do")
+	@RequestMapping("/jsonTest.do") 
 	public JSONObject jsonArr(){
 		JSONObject object=null;
 		//JSONArray jsonArr=new JSONArray();

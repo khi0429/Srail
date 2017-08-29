@@ -10,7 +10,7 @@ public class IndexController {
 	@RequestMapping("/index.do")
 	public String showIndex(Model m){
 		System.out.println("index.do실행");
-		return "/index";
+		return "/index"; 
 	}
 	
 	@RequestMapping("/top.do")
