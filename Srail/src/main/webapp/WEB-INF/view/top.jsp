@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title><%=myctx%></title>
+<title><%=myctx%></title> 
 
 <link rel="stylesheet" type="text/css" href="<%=myctx%>/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="<%=myctx%>/css/maincss.css">
