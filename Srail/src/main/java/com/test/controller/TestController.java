@@ -19,7 +19,7 @@ public class TestController {
 			InputStreamReader isr = new InputStreamReader(url.openConnection().getInputStream(), "UTF-8");
 			JSONObject jsonArr = (JSONObject)JSONValue.parse(isr);
 			
-			m.addAttribute("jsonArr",jsonArr);
+			m.addAttribute("jsonArr",jsonArr); 
 			//System.out.print(jsonArr);
 			
 		}catch(Exception e){
