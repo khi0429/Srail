@@ -9,7 +9,7 @@
 	<img src="<%=myctx%>/images/banner000.png" width="100%">
 	<div id="banner" style="background:#ff9;" class="container">
 		<div id="searchTicket" class="col-md-3">  
-			<h3>승차권 간편예매</h3>
+			<h3>승차권 간편예매</h3> 
 		    <form method="post" action="searchTrain.do">
 		        <ul>
 		            <li class="inputs">
