@@ -15,7 +15,7 @@
 	<link
 	   href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
 	   rel="stylesheet" type="text/css">
-	</head>
+	</head> 
 	<body>
 	
 		<script type="text/javascript">
