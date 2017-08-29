@@ -24,7 +24,7 @@
 <div id="gnbTop">
 	<div class="container">
 		<ul class="topBar fix">
-			<li><a href="#">HOME</a></li>
+			<li><a href="<%=myctx%>/index.do">HOME</a></li>
 			<li class="bar"> ㅣ </li>
 			<li><a href="#">예약내역</a></li>
 			<li class="bar"> ㅣ </li>
@@ -32,7 +32,7 @@
 			<li class="bar"> ㅣ </li>
 			<li><a href="#">로그인</a></li>
 			<li class="bar"> ㅣ </li>
-			<li><a href="#">회원가입</a></li>
+			<li><a href="<%=myctx%>/join.do">회원가입</a></li>
 		</ul>
 	</div>
 </div>
