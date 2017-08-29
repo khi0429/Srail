@@ -17,7 +17,7 @@
 		                <span class="usericonbox"></span>
 		                <input type="text" name="depart" id="depart">
 		            </li> 
-		            <li class="inputs botbar">
+		            <li class="inputs botbar"> 
 		                <lavel for="arrival">도착역</lavel>
 		                <span class="usericonbox"></span>
 		                <input type="text" name="arrival" id="arrival">
