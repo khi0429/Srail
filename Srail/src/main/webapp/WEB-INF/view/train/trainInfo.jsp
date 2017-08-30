@@ -17,31 +17,6 @@
 	   rel="stylesheet" type="text/css">
 	</head> 
 	<body>
-	
-		<script type="text/javascript">
-		function jsonTest(){
-		      $.ajax({
-		         type:'GET',
-		         url: 'jsonTest.do',
-		         dataType:'json',
-		         success:function(res){
-		            str='';
-		             $.each(res.response.body.items.item,function(i,item){
-		            	str+="@@@@"+item.depplandtime;
-		            }); 
-		            $('#info').html(str);
-		         },
-		         error:function(e){
-		            alert('error: '+e.status);
-		         }
-		      });
-		   }
-		</script>
-	ㅇㅇㅇㅇ
-		<c:set var="trArr" value="${jsonArr.response.body.items}"/>
-		
-		<button onclick="jsonTest()">jsonTest</button>
-		<div id="info"></div>
-		
+		ddd
 	</body>
 </html>

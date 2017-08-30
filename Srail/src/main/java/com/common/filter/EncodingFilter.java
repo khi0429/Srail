@@ -10,19 +10,6 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 
 /**
- * �ѱ� ó�� ����
-Filter (�������̽�)
-- ���� 2.3 �̻� ���� ��� ����
-- ���Ϳ��� post����� �ѱ� ó���� ����ϵ��� �� ����
-- ���ʹ� �����������̼ǿ��� ����ϴ� �����̳�
-   JSP�� ������ ��ġ�� �ʰ� request, response��
-   ������ �� �ֵ��� ���������.
-- ���� ���ʹ� request�� response�� jsp,html
-  ���� ���� ���ҽ��� �����ϱ� ����
-  �ʿ��� �� ó���� �����ϰ� ���ְ�, �Ǵ� ��ó����
-  �����ϰ� �Ѵ�.
-- ���� ���͵��� ���� �� ����ϸ� ���������� ���
-  �� ���� �ִ�.
    ----web.xml-------------------------------
     <filter>
   	<description>encode filter</description>
@@ -36,7 +23,7 @@ Filter (�������̽�)
   </filter-mapping>   
    ------------------------------------------
  * */
-@WebFilter("*.do")
+@WebFilter("*")
 public class EncodingFilter implements Filter {
 
     public EncodingFilter() {
@@ -49,7 +36,7 @@ public class EncodingFilter implements Filter {
 
 	public void doFilter(ServletRequest request, ServletResponse response, 
 			FilterChain chain) throws IOException, ServletException {
-		System.out.println("EncodingFilter ����");
+		System.out.println("EncodingFilter");
 		request.setCharacterEncoding("UTF-8");
 		chain.doFilter(request, response);
 	}

@@ -57,7 +57,7 @@
 		var M = month + 1;
 		if (month <= 8) {
 			M = "0" + M;
-			alert(M);
+			//alert(M);
 		}
 
 		var ju = 0;
@@ -130,7 +130,7 @@
 		var M = month2 + 1;
 		if (month2 <= 8) {
 			M = "0" + M;
-			alert(M);
+			//alert(M);
 		}
 
 		var ju = 0;

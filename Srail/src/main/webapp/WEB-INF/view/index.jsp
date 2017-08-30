@@ -4,23 +4,54 @@
 <%
 	String myctx=request.getContextPath(); 
 %>    
-<c:import url="/top.do"/>
+<c:import url="/top"/>
+
+<script type="text/javascript">
+
+	function depPlaceChange(depPlace){
+		$.ajax({
+	         type:'POST',
+	         url: 'optionChange?depPlace='+depPlace,
+	         success:function(res){
+	        	 $('#arr option').show();
+	        	 $('#arr'+res).hide();
+	         },
+	         error:function(e){
+	        	alert("error=>"+e.status);
+	         }
+	      });
+	}
+	
+</script>
+
 <div id="mainWrap">
 	<img src="<%=myctx%>/images/banner000.png" width="100%">
 	<div id="banner" style="background:#ff9;" class="container">
 		<div id="searchTicket" class="col-md-3">  
 		 	<h3>승차권 간편예매</h3> 
-		    <form method="post" action="searchTrain.do">
+		    <form name="aaa" method="post" action="trainInfo">
 		        <ul>
 		            <li class="inputs">
-		                <lavel for="depart">출발역</lavel>
-		                <span class="usericonbox"></span>
-		                <input type="text" name="depart" id="depart">
+		                <label for="depart">출발역</label>
+		                <!-- <span class="usericonbox" onclick=""></span>
+		                <input type="text" name="depart" id="depart"> -->
+		                <select id="dep" name="dep" onchange="depPlaceChange(this.value)">
+							<option>::출발역::</option>
+							<c:forEach items="${placeArr}" var="p">
+								<option id="dep${p.placename}">${p.placename}</option>
+							</c:forEach>
+						</select>
 		            </li> 
-		            <li class="inputs botbar"> 
-		                <lavel for="arrival">도착역</lavel>
-		                <span class="usericonbox"></span>
-		                <input type="text" name="arrival" id="arrival">
+		            <li class="inputs botbar">
+		                <label for="arrival">도착역</label>
+			                <select id="arr" name="arr">
+								<option>::도착역::</option>
+								<c:forEach items="${placeArr}" var="p">
+									<option id="arr${p.placename}">${p.placename}</option>
+								</c:forEach>
+							</select>
+		               <!--  <span class="usericonbox"></span>
+		                <input type="text" name="arrival" id="arrival"> -->
 		            </li>
 		        </ul>
 		        <ul>
@@ -49,4 +80,6 @@
 		</div>
 	</div>
 </div>
-<c:import url="/foot.do"/>
+
+
+<c:import url="/foot"/>
